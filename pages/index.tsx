@@ -15,13 +15,10 @@ export default function Home() {
         {/* NAVBAR */}
         <nav className="absolute top-0 z-10 w-screen p-4 text-black">
           <div className="container mx-auto flex justify-between items-center">
-            <div className="text-2xl font-bold"> Desa Mantigola</div>              
-            <div className="flex space-x-4 rounded-2xl outline-black outline-8 px-4 py-1">
-              
-            </div>
+            <div className="text-2xl font-bold"> Desa Mantigola</div>
             <div className="flex space-x-4">
               <a
-              className="rounded-xl outline-black outline-8 px-4 py-1"
+                className="rounded-xl outline-black outline-8 px-4 py-1"
                 href="https://www.instagram.com/warnaiwaktobi"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -29,7 +26,7 @@ export default function Home() {
                 Instagram
               </a>
               <a
-              className="rounded-xl outline-black outline-8 px-4 py-1"
+                className="rounded-xl outline-black outline-8 px-4 py-1"
                 href="https://id.wikipedia.org/wiki/Mantigola,_Kaledupa,_Wakatobi"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -39,24 +36,39 @@ export default function Home() {
             </div>
           </div>
         </nav>
-        {/* Section 1: Landing page*/}
-        <div className="w-screen h-[960px] mx-auto flex items-center relative overflow-hidden mb-10">
-          {/* Background Image */}
-          <img
-            className="object-top object-cover w-screen h-[960px] overflow-hidden"
-            src="/1.jpg"
-            alt="Desa Mantigola"
-          />
-          {/* Title */}
-          <div>
-            <strong className="absolute bottom-90 left-10  text-6xl text-white text-pretty font-bold font-inter mb-8">
-              Selamat Datang di{" "}
-              <a className="underline decoration-sky-500/100">Desa Mantigola</a>
-              .
-            </strong>
+        {/* Section 1: HOME*/}
+        <section id="home" className="pt-36">
+          <div className="container">
+            <div className="flex flex-wrap">
+              <div className="w-full self-center px-4">
+                <h1 className="text-base font-semibold text-primary">
+                  Selamat Datang di <span className="font-bold block text-4xl text-dark mt-1">Desa Mantigola🌴</span>
+                </h1>
+              </div>
+              <div className="w-screen h-[960px] mx-auto flex items-center relative overflow-hidden mb-10">
+                {/* Background Image */}
+                <img
+                  className="object-top object-cover w-screen h-[960px] overflow-hidden"
+                  src="/1.jpg"
+                  alt="Desa Mantigola"
+                />
+                {/* Title */}
+                <div>
+                  <strong className="absolute bottom-90 left-10  text-2xl text-white text-pretty font-bold font-inter mb-8">
+                    Welcome to 
+                    <span className="block text-6xl">
+                      Desa <span className="underline decoration-sky-500/100">Mantigola.</span>
+                    </span>
+                    <span>
+                      Kampung Bajo
+                    </span>
+                  </strong>
+                </div>
+              </div>
+              <hr className="w-11/12 mx-auto border-2 border-black mb-10" />
+            </div>
           </div>
-        </div>
-        <hr className="w-11/12 mx-auto border-2 border-black mb-10" />
+        </section>
         {/* Section 2: Description of the village */}
         <div className="w-screen mx-auto flex flex-col items-center overflow-hidden mb-10">
           <div className="text-6xl font-bold font-inter text-black mb-8">
